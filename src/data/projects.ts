@@ -7,7 +7,7 @@ export const projects: Project[] = [
     title: "La Fuga Siargao",
     description: "A single-page hotel booking website.",
     stack: ["HTML", "CSS", "JavaScript"],
-    image: "/assets/1.png",
+    image: "assets/1.png",
     url: "https://gemps18.github.io/La-Fuga-Hotel/",
   },
   {
@@ -16,7 +16,7 @@ export const projects: Project[] = [
     title: "Analytics Dashboard",
     description: "An analytics dashboard with a light-to-dark theme toggle.",
     stack: ["HTML", "CSS","JavaScript"],
-    image: "/assets/2.png",
+    image: "assets/2.png",
     url: "https://gemps18.github.io/Light-to-Dark-Dashboard/",
   },
   {
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     title: "Art Gallery Landing Page",
     description: "An art gallery landing page.",
     stack: ["HTML", "CSS"],
-    image: "/assets/3.png",
+    image: "assets/3.png",
     url: "https://gemps18.github.io/Art-Gallery-Landing-Page/",
   },
   {
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     title: "Online Educational Landing Page",
     description: "An educational landing page design.",
     stack: ["HTML", "CSS"],
-    image: "/assets/4.png",
+    image: "assets/4.png",
     url: "https://gemps18.github.io/Education-Platform-Landing-Page/",
   },
   {
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     title: "Music Streaming Webpage",
     description: "A music streaming webpage design.",
     stack: ["HTML", "CSS", "JavaScript"],
-    image: "/assets/5.png",
+    image: "assets/5.png",
     url: "https://gemps18.github.io/Music-Streaming-Platform/",
   },
   {
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     title: "Task Tracker",
     description: "A simple task tracker webpage.",
     stack: ["HTML", "CSS"],
-    image: "/assets/6.png",
+    image: "assets/6.png",
     url: "https://gemps18.github.io/Task-Tracker/",
   },
 ];

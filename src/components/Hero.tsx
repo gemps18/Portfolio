@@ -1,3 +1,4 @@
+import { asset } from "../utils/asset";
 import Reveal from "./Reveal";
 import { useTypedText } from "../hooks/useTypedText";
 
@@ -33,7 +34,7 @@ export default function Hero() {
             View Projects
           </a>
           
-            <a href="/assets/CV.pdf"
+            <a href={asset("/assets/CV.pdf")}
             className="rounded border border-line px-6 py-3 font-mono text-sm text-paper transition-colors hover:border-signal hover:text-signal"
           >
             Download CV
@@ -61,7 +62,7 @@ export default function Hero() {
 
       <Reveal origin="right" delay={150} className="mx-auto flex justify-center md:mx-0">
         <img
-          src="/assets/Profile.jpg"
+          src={asset("/assets/Profile.jpg")}
           alt="Carlos Gemperle"
           className="w-[80vw] rounded-[25%] border border-line object-cover shadow-2xl shadow-black/40 animate-float sm:w-[70vw] md:w-[25vw]"
         />

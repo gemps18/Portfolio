@@ -1,3 +1,4 @@
+import { asset } from "../utils/asset";
 import type { Project } from "../types";
 
 export default function ProjectCard({ project }: { project: Project }) {
@@ -16,7 +17,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 
       <div className="relative aspect-video w-full overflow-hidden bg-paper-soft">
         <img
-          src={project.image}
+          src={asset(project.image)}
           alt={`${project.title} preview`}
           loading="lazy"
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
