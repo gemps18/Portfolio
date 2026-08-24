@@ -2,18 +2,23 @@ import { useMemo, useState } from "react";
 import { projects } from "../data/projects";
 import ProjectCard from "./ProjectCard";
 import Reveal from "./Reveal";
+import { useLanguage } from "../i18n/LanguageContext";
+
+const ALL_FILTER = "all";
 
 export default function Projects() {
+  const { t } = useLanguage();
+
   const stacks = useMemo(() => {
     const unique = new Set<string>();
     projects.forEach((p) => p.stack.forEach((tech) => unique.add(tech)));
-    return ["All", ...Array.from(unique).sort()];
+    return Array.from(unique).sort();
   }, []);
 
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState<string>(ALL_FILTER);
 
   const filteredProjects = useMemo(() => {
-    if (activeFilter === "All") return projects;
+    if (activeFilter === ALL_FILTER) return projects;
     return projects.filter((p) => p.stack.includes(activeFilter));
   }, [activeFilter]);
 
@@ -22,12 +27,12 @@ export default function Projects() {
       <div className="mx-auto max-w-6xl">
         <Reveal origin="top">
           <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-            Latest Projects
+            {t.projects.heading}
           </h2>
         </Reveal>
 
         <Reveal origin="top" delay={100} className="mt-8 flex flex-wrap gap-2">
-          {stacks.map((stack) => (
+          {[ALL_FILTER, ...stacks].map((stack) => (
             <button
               key={stack}
               onClick={() => setActiveFilter(stack)}
@@ -37,7 +42,7 @@ export default function Projects() {
                   : "border-line-light bg-paper-soft text-slate-ink hover:border-signal-dim"
               }`}
             >
-              {stack}
+              {stack === ALL_FILTER ? t.projects.all : stack}
             </button>
           ))}
         </Reveal>
@@ -51,9 +56,7 @@ export default function Projects() {
         </div>
 
         {filteredProjects.length === 0 && (
-          <p className="mt-10 font-mono text-sm text-slate-ink">
-            No projects match that filter yet.
-          </p>
+          <p className="mt-10 font-mono text-sm text-slate-ink">{t.projects.empty}</p>
         )}
       </div>
     </section>

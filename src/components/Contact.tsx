@@ -1,3 +1,4 @@
+import { useLanguage } from "../i18n/LanguageContext";
 import { useState, type FormEvent } from "react";
 import Reveal from "./Reveal";
 
@@ -5,6 +6,7 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const { t } = useLanguage();
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -20,11 +22,10 @@ export default function Contact() {
     <section id="contact" className="px-6 py-24">
       <Reveal origin="bottom" className="mx-auto max-w-2xl text-center">
         <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-paper sm:text-4xl">
-          Want my services?
+          {t.contact.heading}
         </h2>
         <p className="mt-4 text-slate">
-          I'm open to freelance work and full-time roles. Send a message and
-          I'll get back to you.
+          {t.contact.description}
         </p>
 
         <form
@@ -36,7 +37,7 @@ export default function Contact() {
               htmlFor="name"
               className="font-mono text-xs text-slate"
             >
-              Name
+              {t.contact.name}
             </label>
             <input
               id="name"
@@ -51,7 +52,7 @@ export default function Contact() {
               htmlFor="email"
               className="font-mono text-xs text-slate"
             >
-              E-mail
+              {t.contact.email}
             </label>
             <input
               id="email"
@@ -67,7 +68,7 @@ export default function Contact() {
               htmlFor="message"
               className="font-mono text-xs text-slate"
             >
-              Message
+              {t.contact.message}
             </label>
             <textarea
               id="message"
@@ -82,7 +83,7 @@ export default function Contact() {
             type="submit"
             className="w-full rounded bg-signal px-6 py-3 font-mono text-sm font-medium text-ink transition-transform hover:-translate-y-0.5"
           >
-            Send Message
+            {t.contact.send}
           </button>
         </form>
       </Reveal>
