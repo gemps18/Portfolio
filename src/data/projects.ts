@@ -48,12 +48,39 @@ export const projects: Project[] = [
   },
   {
     slug: "task-tracker",
-    fileName: "task-tracker.tsx",
+    fileName: "Task_Tracker.tsx",
     title: "Task Tracker",
     description: "A simple task tracker webpage.",
     stack: ["HTML", "CSS"],
     image: "assets/6.png",
     url: "https://gemps18.github.io/Task-Tracker/",
+  },
+  {
+    slug: "jardineria-putxet",
+    fileName: "Jardineria_Putxet.tsx",
+    title: "Jardineria Putxet",
+    description: "A redesign of a garden shop with React.",
+    stack: ["JavaScript", "React", "Vite", "Tailwind CSS"],
+    image: "assets/7.png",
+    url: "https://gemps18.github.io/Jardineria_Putxet/"
+  },
+  {
+    slug: "queviures-murria",
+    fileName: "Queviures_Murria.tsx",
+    title: "Queviures Murria",
+    description: "A redesign of a restaurant & charcuterie shop with React.",
+    stack: ["JavaScript", "React", "Vite", "Zustand"],
+    image: "assets/8.png",
+    url: "https://gemps18.github.io/Queviures_Murria/"
+  },
+  {
+    slug: "ivori-barcelona",
+    fileName: "Ivori_Barcelona.tsx",
+    title: "Ivori Barcelona",
+    description: "A redesign of a clothes shop with React.",
+    stack: ["JavaScript", "React", "Vite", "Tailwind CSS"],
+    image: "assets/9.png",
+    url: "https://gemps18.github.io/Ivori_Barcelona/"
   },
 ];
 
