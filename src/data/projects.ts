@@ -2,6 +2,45 @@ import type { Project, Service } from "../types";
 
 export const projects: Project[] = [
   {
+    slug: "jardineria-putxet",
+    fileName: "Jardineria_Putxet.tsx",
+    title: { en: "Jardineria Putxet", es: "Jardineria Putxet", ca: "Jardineria Putxet" },
+    description: {
+      en: "Modernizing a 40-Year-Old Barcelona Garden Shop.",
+      es: "Modernización de una tienda de jardinería de Barcelona con 40 años de antigüedad.",
+      ca: "Modernització d'una botiga de jardineria de 40 anys a Barcelona.",
+    },
+    stack: ["JavaScript", "React", "Vite", "Tailwind CSS"],
+    image: "assets/7.png",
+    url: "https://gemps18.github.io/Jardineria_Putxet/",
+  },
+  {
+    slug: "queviures-murria",
+    fileName: "Queviures_Murria.tsx",
+    title: { en: "Queviures Murria", es: "Queviures Murria", ca: "Queviures Murria" },
+    description: {
+      en: "Built as a fast, multi-page, trilingual site with an interactive shop experience layered on top of the original site's structure and visual identity.",
+      es: "Diseñado como un sitio web rápido, multipágina y trilingüe, con una experiencia de compra interactiva superpuesta a la estructura y la identidad visual del sitio original.",
+      ca: "Construït com un lloc web ràpid, multipàgina i trilingüe amb una experiència de botiga interactiva superposada a l'estructura i la identitat visual del lloc web original.",
+    },
+    stack: ["JavaScript", "React", "Vite", "Zustand"],
+    image: "assets/8.png",
+    url: "https://gemps18.github.io/Queviures_Murria/",
+  },
+  {
+    slug: "ivori-barcelona",
+    fileName: "Ivori_Barcelona.tsx",
+    title: { en: "Ivori Barcelona", es: "Ivori Barcelona", ca: "Ivori Barcelona" },
+    description: {
+      en: "A storefront rebuild for a clothing shop with client-side filtering.",
+      es: "Remodelación de la fachada de una tienda de ropa con filtrado del lado del cliente.",
+      ca: "Reconstrucció de l'aparador d'una botiga de roba amb filtratge del costat del client.",
+    },
+    stack: ["JavaScript", "React", "Vite", "Tailwind CSS"],
+    image: "assets/9.png",
+    url: "https://gemps18.github.io/Ivori_Barcelona/",
+  },
+  {
     slug: "la-fuga-siargao",
     fileName: "La_Fuga_Siargao.tsx",
     title: { en: "La Fuga Siargao", es: "La Fuga Siargao", ca: "La Fuga Siargao" },
@@ -78,45 +117,6 @@ export const projects: Project[] = [
     stack: ["HTML", "CSS"],
     image: "assets/6.png",
     url: "https://gemps18.github.io/Task-Tracker/",
-  },
-  {
-    slug: "jardineria-putxet",
-    fileName: "Jardineria_Putxet.tsx",
-    title: { en: "Jardineria Putxet", es: "Jardineria Putxet", ca: "Jardineria Putxet" },
-    description: {
-      en: "A redesign of a garden shop with React.",
-      es: "Un rediseño de una tienda de jardinería con React.",
-      ca: "Un redisseny d'una botiga de jardineria amb React.",
-    },
-    stack: ["JavaScript", "React", "Vite", "Tailwind CSS"],
-    image: "assets/7.png",
-    url: "https://gemps18.github.io/Jardineria_Putxet/",
-  },
-  {
-    slug: "queviures-murria",
-    fileName: "Queviures_Murria.tsx",
-    title: { en: "Queviures Murria", es: "Queviures Murria", ca: "Queviures Murria" },
-    description: {
-      en: "A redesign of a restaurant & charcuterie shop with React.",
-      es: "Un rediseño de un restaurante y tienda de charcutería con React.",
-      ca: "Un redisseny d'un restaurant i botiga de xarcuteria amb React.",
-    },
-    stack: ["JavaScript", "React", "Vite", "Zustand"],
-    image: "assets/8.png",
-    url: "https://gemps18.github.io/Queviures_Murria/",
-  },
-  {
-    slug: "ivori-barcelona",
-    fileName: "Ivori_Barcelona.tsx",
-    title: { en: "Ivori Barcelona", es: "Ivori Barcelona", ca: "Ivori Barcelona" },
-    description: {
-      en: "A redesign of a clothes shop with React.",
-      es: "Un rediseño de una tienda de ropa con React.",
-      ca: "Un redisseny d'una botiga de roba amb React.",
-    },
-    stack: ["JavaScript", "React", "Vite", "Tailwind CSS"],
-    image: "assets/9.png",
-    url: "https://gemps18.github.io/Ivori_Barcelona/",
   },
 ];
 
