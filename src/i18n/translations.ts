@@ -27,6 +27,10 @@ export const translations = {
       all: "All",
       empty: "No projects match that filter yet.",
       open: "Open →",
+      seeMore: "See More →",
+      featuresHeading: "Features & Improvements",
+      visitSite: "Visit Site",
+      originalSite: "Original Site",
     },
     contact: {
       heading: "Want my services?",
@@ -67,6 +71,10 @@ export const translations = {
       all: "Todos",
       empty: "Ningún proyecto coincide con ese filtro todavía.",
       open: "Abrir →",
+      seeMore: "Ver Más →",
+      featuresHeading: "Características y Mejoras",
+      visitSite: "Visitar Sitio",
+      originalSite: "Sitio Original",
     },
     contact: {
       heading: "¿Quieres mis servicios?",
@@ -106,6 +114,10 @@ export const translations = {
       all: "Tots",
       empty: "Cap projecte coincideix amb aquest filtre encara.",
       open: "Obrir →",
+      seeMore: "Veure Més →",
+      featuresHeading: "Característiques i Millores",
+      visitSite: "Visitar Lloc",
+      originalSite: "Lloc Original",
     },
     contact: {
       heading: "Vols els meus serveis?",

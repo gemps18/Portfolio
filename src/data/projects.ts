@@ -2,6 +2,39 @@ import type { Project, Service } from "../types";
 
 export const projects: Project[] = [
   {
+    slug: "avalon-cafe",
+    fileName: "Avalon_Cafe.tsx",
+    title: { en: "Avalon Cafe", es: "Avalon Cafe", ca: "Avalon Cafe" },
+    description: {
+      en: "A responsive cafe & catering website built with React, TypeScript, and Tailwind CSS.",
+      es: "Un sitio web responsivo para un café y servicio de catering, creado con React, TypeScript y Tailwind CSS.",
+      ca: "Un lloc web responsiu per un cafè i càterings creat amb React, TypeScript i Tailwind CSS.",
+    },
+    stack: ["JavaScript", "React", "TypeScript", "Vite", "Tailwind CSS"],
+    image: "assets/10.png",
+    url: "https://gemps18.github.io/Avalon_Cafe/",
+    features: {
+      en: [
+        "Fully responsive menu and ordering layout",
+        "Built with reusable React + TypeScript components",
+        "Styled entirely with Tailwind CSS utility classes",
+        "Optimized image loading for fast page loads",
+      ],
+      es: [
+        "Diseño de menú y pedidos totalmente responsivo",
+        "Construido con componentes reutilizables de React + TypeScript",
+        "Estilizado íntegramente con clases de utilidad de Tailwind CSS",
+        "Carga de imágenes optimizada para un rendimiento rápido",
+      ],
+      ca: [
+        "Disseny de menú i comandes totalment responsiu",
+        "Construït amb components reutilitzables de React + TypeScript",
+        "Estilitzat íntegrament amb classes d'utilitat de Tailwind CSS",
+        "Càrrega d'imatges optimitzada per a un rendiment ràpid",
+      ],
+    },
+  },
+  {
     slug: "jardineria-putxet",
     fileName: "Jardineria_Putxet.tsx",
     title: { en: "Jardineria Putxet", es: "Jardineria Putxet", ca: "Jardineria Putxet" },
@@ -13,6 +46,27 @@ export const projects: Project[] = [
     stack: ["JavaScript", "React", "Vite", "Tailwind CSS"],
     image: "assets/7.png",
     url: "https://gemps18.github.io/Jardineria_Putxet/",
+    originalUrl: "http://www.jardineriaputxet.com/",
+    features: {
+      en: [
+        "Modernized visual identity while preserving brand recognition",
+        "Mobile-first layout for in-store and on-the-go browsing",
+        "Product/service sections reorganized for clearer navigation",
+        "Built with React, Vite, and Tailwind CSS for fast load times",
+      ],
+      es: [
+        "Identidad visual modernizada conservando el reconocimiento de marca",
+        "Diseño mobile-first para navegación en tienda y en movimiento",
+        "Secciones de productos/servicios reorganizadas para una navegación más clara",
+        "Construido con React, Vite y Tailwind CSS para tiempos de carga rápidos",
+      ],
+      ca: [
+        "Identitat visual modernitzada mantenint el reconeixement de marca",
+        "Disseny mobile-first per a navegació a la botiga i en moviment",
+        "Seccions de productes/serveis reorganitzades per a una navegació més clara",
+        "Construït amb React, Vite i Tailwind CSS per a temps de càrrega ràpids",
+      ],
+    },
   },
   {
     slug: "queviures-murria",
@@ -23,9 +77,30 @@ export const projects: Project[] = [
       es: "Diseñado como un sitio web rápido, multipágina y trilingüe, con una experiencia de compra interactiva superpuesta a la estructura y la identidad visual del sitio original.",
       ca: "Construït com un lloc web ràpid, multipàgina i trilingüe amb una experiència de botiga interactiva superposada a l'estructura i la identitat visual del lloc web original.",
     },
-    stack: ["JavaScript", "React", "Vite", "Zustand"],
+    stack: ["JavaScript", "React", "TypeScript", "Vite", "Zustand"],
     image: "assets/8.png",
     url: "https://gemps18.github.io/Queviures_Murria/",
+    originalUrl: "https://www.murria.cat/",
+    features: {
+      en: [
+        "Trilingual site (Catalan, Spanish, English) with instant language switching",
+        "Interactive shop experience layered onto the original visual identity",
+        "State managed with Zustand for a lightweight, fast cart and browsing flow",
+        "Multi-page structure for products, history, and contact",
+      ],
+      es: [
+        "Sitio trilingüe (catalán, español, inglés) con cambio de idioma instantáneo",
+        "Experiencia de tienda interactiva superpuesta a la identidad visual original",
+        "Estado gestionado con Zustand para una navegación y carrito ligeros y rápidos",
+        "Estructura multipágina para productos, historia y contacto",
+      ],
+      ca: [
+        "Lloc trilingüe (català, espanyol, anglès) amb canvi d'idioma instantani",
+        "Experiència de botiga interactiva superposada a la identitat visual original",
+        "Estat gestionat amb Zustand per a una navegació i cistella lleugeres i ràpides",
+        "Estructura multipàgina per a productes, història i contacte",
+      ],
+    },
   },
   {
     slug: "ivori-barcelona",
@@ -39,6 +114,27 @@ export const projects: Project[] = [
     stack: ["JavaScript", "React", "Vite", "Tailwind CSS"],
     image: "assets/9.png",
     url: "https://gemps18.github.io/Ivori_Barcelona/",
+    originalUrl: "https://www.ivoribarcelona.com/",
+    features: {
+      en: [
+        "Client-side filtering by category, size, or collection",
+        "Rebuilt storefront with a cleaner, gallery-style product layout",
+        "Fully responsive across mobile, tablet, and desktop",
+        "Built with React, Vite, and Tailwind CSS",
+      ],
+      es: [
+        "Filtrado del lado del cliente por categoría, talla o colección",
+        "Fachada de tienda reconstruida con un diseño de producto tipo galería más limpio",
+        "Totalmente responsivo en móvil, tablet y escritorio",
+        "Construido con React, Vite y Tailwind CSS",
+      ],
+      ca: [
+        "Filtratge del costat del client per categoria, talla o col·lecció",
+        "Aparador reconstruït amb un disseny de producte tipus galeria més net",
+        "Totalment responsiu en mòbil, tauleta i escriptori",
+        "Construït amb React, Vite i Tailwind CSS",
+      ],
+    },
   },
   {
     slug: "la-fuga-siargao",

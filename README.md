@@ -39,6 +39,8 @@ code editor file tabs. Fonts: Space Grotesk (display), Inter (body),
 JetBrains Mono (labels/code).
 
 ## Project structure
+
+```
 src/
 components/ UI components (Navbar, Hero, About, Services, Projects, Contact, Footer, ...)
 data/ Project and service content (src/data/projects.ts)
@@ -48,6 +50,7 @@ utils/ Helpers (e.g. asset() for base-path-safe asset URLs)
 types.ts Shared TypeScript types
 public/
 assets/ Images, CV, favicon — copy your own files in here
+```
 
 
 ## Getting started
