@@ -17,9 +17,9 @@ export const translations = {
       downloadCV: "Download CV",
     },
     about: {
-      label: "Full-Stack Software Developer",
+      label: "Front-End Developer",
       description:
-        "I'm a full-stack developer with strong proficiency across the web stack — building robust front ends, back ends, and everything in between using HTML, CSS, SQL, MongoDB, and object-relational mapping. I specialize in cloud-native development with Docker, Kubernetes, and CI/CD pipelines, and apply UI/UX best practices through Figma to build scalable, user-centric products.",
+        "I'm a front-end developer focused on building fast, responsive, and accessible web interfaces with React, TypeScript, JavaScript, HTML, CSS, and Tailwind CSS. I bring a UI/UX designer's mindset to every project, using Figma to plan intuitive, user-centered layouts and turning them into polished, maintainable code.",
     },
     services: { heading: "My Services" },
     projects: {
@@ -64,9 +64,9 @@ export const translations = {
       downloadCV: "Descargar CV",
     },
     about: {
-      label: "Desarrollador de Software Full-Stack",
+      label: "Desarrollador Front-End",
       description:
-        "Soy un desarrollador full-stack con sólida experiencia en toda la pila web: construyo interfaces robustas, back-ends y todo lo que hay en medio usando HTML, CSS, SQL, MongoDB y mapeo objeto-relacional. Me especializo en desarrollo cloud-native con Docker, Kubernetes y pipelines de CI/CD, y aplico las mejores prácticas de UI/UX con Figma para crear productos escalables centrados en el usuario.",
+        "Soy un desarrollador front-end especializado en crear interfaces web rápidas, responsivas y accesibles con React, TypeScript, JavaScript, HTML, CSS y Tailwind CSS. Aporto la mentalidad de un diseñador UI/UX a cada proyecto: uso Figma para planificar diseños intuitivos centrados en el usuario y los convierto en código pulido y mantenible.",
     },
     services: { heading: "Mis Servicios" },
     projects: {
@@ -110,9 +110,9 @@ export const translations = {
       downloadCV: "Descarregar CV",
     },
     about: {
-      label: "Desenvolupador de Software Full-Stack",
+      label: "Desenvolupador Front-End",
       description:
-        "Sóc un desenvolupador full-stack amb sòlida experiència en tota la pila web: construeixo interfícies robustes, back-ends i tot el que hi ha entremig fent servir HTML, CSS, SQL, MongoDB i mapatge objecte-relacional. Estic especialitzat en desenvolupament cloud-native amb Docker, Kubernetes i pipelines de CI/CD, i aplico les millors pràctiques d'UI/UX amb Figma per crear productes escalables centrats en l'usuari.",
+        "Sóc un desenvolupador front-end especialitzat en crear interfícies web ràpides, responsives i accessibles amb React, TypeScript, JavaScript, HTML, CSS i Tailwind CSS. Aporto la mentalitat d'un dissenyador UI/UX a cada projecte: faig servir Figma per planificar dissenys intuïtius centrats en l'usuari i els converteixo en codi polit i mantenible.",
     },
     services: { heading: "Els Meus Serveis" },
     projects: {

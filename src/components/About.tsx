@@ -2,8 +2,24 @@ import Reveal from "./Reveal";
 import { useLanguage } from "../i18n/LanguageContext";
 
 const SKILLS = [
-  "React", "React Native", "JavaScript", "TypeScript", "Python", "Django",
-  "REST APIs", "SQL", "MongoDB", "Docker", "Kubernetes", "CI/CD", "Figma",
+  // Front-End
+  "React",
+  "JavaScript",
+  "TypeScript",
+  "HTML",
+  "CSS",
+  "Tailwind CSS",
+  "Figma",
+  "React Native",
+  // Back-End & DevOps
+  "Python",
+  "Django",
+  "REST APIs",
+  "SQL",
+  "MongoDB",
+  "Docker",
+  "Kubernetes",
+  "CI/CD",
 ];
 
 export default function About() {
