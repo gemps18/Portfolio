@@ -10,7 +10,7 @@ export const translations = {
     },
     hero: {
       greeting: "Hey, I'm",
-      roles: ["Full-Stack Software Developer", "Web Developer", "UI/UX Designer"],
+      roles: ["Front-End Developer", "Web Developer", "UI/UX Designer"],
       description:
         "I build clean, scalable web and application solutions with a UI/UX designer's eye — from React front ends to Django-powered APIs, shipped through Docker and CI/CD pipelines.",
       viewProjects: "View Projects",
@@ -40,6 +40,9 @@ export const translations = {
       email: "E-mail",
       message: "Message",
       send: "Send Message",
+      sending: "Sending...",
+      success: "Message sent - I'll get back to you soon.",
+      error: "Something went wrong. Please try again or email me directly.",
     },
     footer: { backToTop: "↑ Back to Top" },
   },
@@ -54,7 +57,7 @@ export const translations = {
     },
     hero: {
       greeting: "Hola, soy",
-      roles: ["Desarrollador de Software Full-Stack", "Desarrollador Web", "Diseñador UI/UX"],
+      roles: ["Desarrollador Front-End", "Desarrollador Web", "Diseñador UI/UX"],
       description:
         "Construyo soluciones web y de aplicaciones limpias y escalables con la mirada de un diseñador UI/UX: desde interfaces en React hasta APIs con Django, desplegadas mediante Docker y pipelines de CI/CD.",
       viewProjects: "Ver Proyectos",
@@ -83,6 +86,9 @@ export const translations = {
       email: "Correo Electrónico",
       message: "Mensaje",
       send: "Enviar Mensaje",
+      sending: "Enviando...",
+      success: "Mensaje enviado - Te responderé pronto.",
+      error: "Algo salió mal. Inténtalo de nuevo o escríbeme directamente.",
     },
     footer: { backToTop: "↑ Volver Arriba" },
   },
@@ -97,7 +103,7 @@ export const translations = {
     },
     hero: {
       greeting: "Hola, sóc",
-      roles: ["Desenvolupador de Software Full-Stack", "Desenvolupador Web", "Dissenyador UI/UX"],
+      roles: ["Desenvolupador Front-End", "Desenvolupador Web", "Dissenyador UI/UX"],
       description:
         "Construeixo solucions web i d'aplicacions netes i escalables amb la mirada d'un dissenyador UI/UX: des d'interfícies en React fins a APIs amb Django, desplegades mitjançant Docker i pipelines de CI/CD.",
       viewProjects: "Veure Projectes",
@@ -126,6 +132,9 @@ export const translations = {
       email: "Correu Electrònic",
       message: "Missatge",
       send: "Envia El Missatge",
+      sending: "Enviant...",
+      success: "Missatge enviat - Et respondré aviat.",
+      error: "Alguna cosa ha fallat. Torna-ho a provar o escriu-me directament.",
     },
     footer: { backToTop: "↑ Tornar a Dalt" },
   },
