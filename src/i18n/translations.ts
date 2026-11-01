@@ -12,7 +12,7 @@ export const translations = {
       greeting: "Hey, I'm",
       roles: ["Front-End Developer", "Web Developer", "UI/UX Designer"],
       description:
-        "I build clean, scalable web and application solutions with a UI/UX designer's eye — from React front ends to Django-powered APIs, shipped through Docker and CI/CD pipelines.",
+        "I build clean, scalable web and application solutions with a UI/UX designer's eye. From React front ends to Django-powered APIs, shipped through Docker and CI/CD pipelines.",
       viewProjects: "View Projects",
       downloadCV: "Download CV",
     },
