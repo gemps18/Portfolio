@@ -50,6 +50,7 @@ export const projects: Project[] = [
     image: "assets/7.png",
     url: "https://gemps18.github.io/Jardineria_Putxet/",
     originalUrl: "http://www.jardineriaputxet.com/",
+    beforeImage: "assets/jardineria-before.png",
     features: {
       en: [
         "Trilingual site (Catalan, Spanish, English) with instant switching, replacing the original's Catalan-only page",
@@ -87,6 +88,7 @@ export const projects: Project[] = [
     image: "assets/8.png",
     url: "https://gemps18.github.io/Queviures_Murria/",
     originalUrl: "https://www.murria.cat/",
+    beforeImage: "assets/queviures-before.png",
     features: {
       en: [
         "Interactive delicatessen catalog with live filtering by category, origin, and dietary needs",
@@ -124,6 +126,7 @@ export const projects: Project[] = [
     image: "assets/9.png",
     url: "https://gemps18.github.io/Ivori_Barcelona/",
     originalUrl: "https://www.ivoribarcelona.com/",
+    beforeImage: "assets/ivori-before.png",
     features: {
       en: [
         "Instant client-side filtering by category, color, and stock status — results update immediately from an in-memory catalog, no page reloads",

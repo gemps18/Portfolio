@@ -49,13 +49,42 @@ export default function ProjectModal({
         </div>
 
         <div className="max-h-[80vh] overflow-y-auto">
-          <div className="aspect-video w-full overflow-hidden bg-paper-soft">
-            <img
-              src={asset(project.image)}
-              alt={`${project.title[lang]} preview`}
-              className="h-full w-full object-cover"
-            />
-          </div>
+          {project.beforeImage ? (
+            <div className="grid gap-px bg-line-light sm:grid-cols-2">
+              <figure className="bg-paper">
+                <figcaption className="px-4 py-2 font-mono text-[11px] uppercase tracking-wide text-slate-ink">
+                  {t.projects.before}
+                </figcaption>
+                <div className="aspect-video overflow-hidden bg-paper-soft">
+                  <img
+                    src={asset(project.beforeImage)}
+                    alt={`${project.title[lang]} (${t.projects.before})`}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              </figure>
+              <figure className="bg-paper">
+                <figcaption className="px-4 py-2 font-mono text-[11px] uppercase tracking-wide text-signal-dim">
+                  {t.projects.after}
+                </figcaption>
+                <div className="aspect-video overflow-hidden bg-paper-soft">
+                  <img
+                    src={asset(project.image)}
+                    alt={`${project.title[lang]} (${t.projects.after})`}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              </figure>
+            </div>
+          ) : (
+            <div className="aspect-video w-full overflow-hidden bg-paper-soft">
+              <img
+                src={asset(project.image)}
+                alt={`${project.title[lang]} preview`}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          )}
 
           <div className="p-6 sm:p-8">
             <h3 className="font-display text-2xl font-semibold sm:text-3xl">
@@ -64,6 +93,26 @@ export default function ProjectModal({
             <p className="mt-4 text-sm leading-relaxed text-slate-ink sm:text-base">
               {project.description[lang]}
             </p>
+
+            {project.metrics && project.metrics.length > 0 && (
+              <div className="mt-6 flex flex-col divide-y divide-line-light overflow-hidden rounded-lg border border-line-light bg-paper-soft text-center sm:flex-row sm:divide-x sm:divide-y-0">
+                {project.metrics.map((metric) => (
+                  <div key={metric.label.en} className="flex-1 p-4">
+                    <p className="font-mono text-[11px] uppercase tracking-wide text-slate-ink">
+                      {metric.label[lang]}
+                    </p>
+                    <p className="mt-1 font-display text-2xl font-semibold text-signal-dim">
+                      {metric.value}
+                      {metric.before && (
+                        <span className="ml-1 font-body text-xs font-normal text-slate-ink">
+                          ({t.projects.metricWas} {metric.before})
+                        </span>
+                      )}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            )}
 
             <div className="mt-6">
               <h4 className="font-mono text-xs uppercase tracking-wide text-signal-dim">
@@ -91,8 +140,8 @@ export default function ProjectModal({
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              
-            <a href={project.url}
+              <a
+                href={project.url}
                 target="_blank"
                 rel="noreferrer"
                 className="rounded bg-signal px-5 py-2.5 font-mono text-xs font-medium text-ink transition-transform hover:-translate-y-0.5"
@@ -100,8 +149,8 @@ export default function ProjectModal({
                 {t.projects.visitSite}
               </a>
               {project.originalUrl && (
-                
-                <a href={project.originalUrl}
+                <a
+                  href={project.originalUrl}
                   target="_blank"
                   rel="noreferrer"
                   className="rounded border border-line-light px-5 py-2.5 font-mono text-xs text-slate-ink transition-colors hover:border-signal-dim hover:text-signal-dim"

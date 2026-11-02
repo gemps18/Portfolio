@@ -10,6 +10,12 @@ export interface LocalizedList {
   es: string[];
   ca: string[];
 }
+
+export interface Metric {
+  label: LocalizedText;
+  value: string;
+  before?: string;
+}
 export interface Project {
   slug: string;
   fileName: string;
@@ -20,6 +26,8 @@ export interface Project {
   url: string;
   features?: LocalizedList;
   originalUrl?: string;
+  beforeImage?: string;
+  metrics?: Metric[];
 }
 
 export interface Service {

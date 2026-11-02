@@ -31,6 +31,9 @@ export const translations = {
       featuresHeading: "Features & Improvements",
       visitSite: "Visit Site",
       originalSite: "Original Site",
+      before: "Before",
+      after: "After",
+      metricWas: "was",
     },
     contact: {
       heading: "Want my services?",
@@ -78,6 +81,9 @@ export const translations = {
       featuresHeading: "Características y Mejoras",
       visitSite: "Visitar Sitio",
       originalSite: "Sitio Original",
+      before: "Antes",
+      after: "Después",
+      metricWas: "antes",
     },
     contact: {
       heading: "¿Quieres mis servicios?",
@@ -124,6 +130,9 @@ export const translations = {
       featuresHeading: "Característiques i Millores",
       visitSite: "Visitar Lloc",
       originalSite: "Lloc Original",
+      before: "Abans",
+      after: "Després",
+      metricWas: "abans",
     },
     contact: {
       heading: "Vols els meus serveis?",
