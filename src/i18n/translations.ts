@@ -18,8 +18,11 @@ export const translations = {
     },
     about: {
       label: "Front-End Developer",
-      description:
-        "I'm a front-end developer focused on building fast, responsive, and accessible web interfaces with React, TypeScript, JavaScript, HTML, CSS, and Tailwind CSS. I bring a UI/UX designer's mindset to every project, using Figma to plan intuitive, user-centered layouts and turning them into polished, maintainable code.",
+      paragraphs: [
+        "I'm a front-end developer and UI/UX designer based in Barcelona. I work mainly with React, TypeScript, and Tailwind CSS, and I'm also comfortable with React Native and Python/Django back ends.",
+        "My path into development isn't a traditional one, and I see that as a strength. I studied business administration in the Netherlands and Spain, so I think about more than code: who the site is for, what the business needs from it, and how to shorten the path to that goal.",
+        "Lately I've been modernizing websites for local Barcelona businesses, rebuilding them as fast, mobile-friendly React apps that keep each shop's identity. Whether I'm sketching layouts in Figma or building the final interface, I aim to connect good design, business goals, and clean, maintainable code.",
+      ],
     },
     services: { heading: "My Services" },
     projects: {
@@ -68,8 +71,11 @@ export const translations = {
     },
     about: {
       label: "Desarrollador Front-End",
-      description:
-        "Soy un desarrollador front-end especializado en crear interfaces web rápidas, responsivas y accesibles con React, TypeScript, JavaScript, HTML, CSS y Tailwind CSS. Aporto la mentalidad de un diseñador UI/UX a cada proyecto: uso Figma para planificar diseños intuitivos centrados en el usuario y los convierto en código pulido y mantenible.",
+      paragraphs: [
+        "Soy desarrollador front-end y diseñador UI/UX con base en Barcelona. Trabajo principalmente con React, TypeScript y Tailwind CSS, y también me desenvuelvo con React Native y back-ends en Python/Django.",
+        "Mi camino hacia el desarrollo no es el tradicional, y lo veo como una fortaleza. Estudié administración de empresas en los Países Bajos y en España, así que pienso en algo más que código: para quién es el sitio, qué necesita el negocio de él y cómo acortar el camino hacia ese objetivo.",
+        "Últimamente me he dedicado a modernizar sitios web de negocios locales de Barcelona, reconstruyéndolos como aplicaciones React rápidas y adaptadas al móvil que conservan la identidad de cada tienda. Ya sea esbozando diseños en Figma o construyendo la interfaz final, busco conectar un buen diseño, los objetivos del negocio y un código limpio y mantenible.",
+      ],
     },
     services: { heading: "Mis Servicios" },
     projects: {
@@ -117,8 +123,11 @@ export const translations = {
     },
     about: {
       label: "Desenvolupador Front-End",
-      description:
-        "Sóc un desenvolupador front-end especialitzat en crear interfícies web ràpides, responsives i accessibles amb React, TypeScript, JavaScript, HTML, CSS i Tailwind CSS. Aporto la mentalitat d'un dissenyador UI/UX a cada projecte: faig servir Figma per planificar dissenys intuïtius centrats en l'usuari i els converteixo en codi polit i mantenible.",
+      paragraphs: [
+        "Sóc desenvolupador front-end i dissenyador UI/UX amb base a Barcelona. Treballo sobretot amb React, TypeScript i Tailwind CSS, i també em sé desenvolupar amb React Native i back-ends en Python/Django.",
+        "El meu camí cap al desenvolupament no és el tradicional, i ho veig com una fortalesa. Vaig estudiar administració d'empreses als Països Baixos i a Espanya, així que penso en alguna cosa més que codi: per a qui és el lloc, què en necessita el negoci i com escurçar el camí cap a aquest objectiu.",
+        "Últimament m'he dedicat a modernitzar llocs web de negocis locals de Barcelona, reconstruint-los com a aplicacions React ràpides i adaptades al mòbil que conserven la identitat de cada botiga. Tant si esbosso dissenys a Figma com si construeixo la interfície final, busco connectar un bon disseny, els objectius del negoci i un codi net i mantenible.",
+      ],
     },
     services: { heading: "Els Meus Serveis" },
     projects: {

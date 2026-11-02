@@ -2,16 +2,16 @@ import Reveal from "./Reveal";
 import { useLanguage } from "../i18n/LanguageContext";
 
 const SKILLS = [
-  // Front-End
+  // Front-end
   "React",
-  "JavaScript",
   "TypeScript",
+  "JavaScript",
   "HTML",
   "CSS",
   "Tailwind CSS",
   "Figma",
   "React Native",
-  // Back-End & DevOps
+  // Back-end & DevOps
   "Python",
   "Django",
   "REST APIs",
@@ -31,12 +31,17 @@ export default function About() {
         <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
           {t.about.label}
         </h2>
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-ink">
-          {t.about.description}
-        </p>
+        <div className="mt-6 max-w-2xl space-y-4 text-base leading-relaxed text-slate-ink">
+          {t.about.paragraphs.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
         <div className="mt-10 flex flex-wrap gap-2">
           {SKILLS.map((skill) => (
-            <span key={skill} className="rounded border border-line-light bg-paper-soft px-3 py-1 font-mono text-xs text-slate-ink">
+            <span
+              key={skill}
+              className="rounded border border-line-light bg-paper-soft px-3 py-1 font-mono text-xs text-slate-ink"
+            >
               {skill}
             </span>
           ))}
